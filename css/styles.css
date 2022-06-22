@@ -91,8 +91,6 @@
  	margin-right: auto;
  	padding-left: 15px;
  	padding-right: 15px;
-
- 	outline: 1px rgb(0, 0, 177) solid;
  }
 
  .logo {
@@ -185,6 +183,8 @@
  /* 4. Main */
 
  .hero {
+ 	padding-top: 200px;
+ 	padding-bottom: 200px;
  	background-color: var(--main-bg);
 
  	text-align: center;
@@ -193,7 +193,9 @@
  }
 
  .hero-title {
- 	margin-bottom: 50px;
+ 	display: block;
+ 	/* width: 696px; */
+ 	margin-bottom: var(--gap-margin);
 
 
  	font-size: 2.75em;
@@ -202,8 +204,16 @@
  	text-transform: uppercase;
  }
 
+ .container.heading {
+ 	width: 696px;
+ }
+
  .btn {
+ 	padding: 10px 32px;
+ 	border: none;
  	background-color: var(--accent);
+ 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+ 	border-radius: 4px;
  	cursor: pointer;
 
  	font-family: inherit;
@@ -227,8 +237,6 @@
  	background-color: var(--white);
 
  	text-align: center;
-
- 	outline: 1px dashed rgb(123, 255, 50);
  }
 
  .section.second-bg {
@@ -283,10 +291,15 @@
 
  .tags-pic {
  	display: block;
+ 	max-width: 100%;
+ }
+
+ .group {
+ 	padding-top: var(--gap-margin);
+ 	padding-bottom: var(--gap-margin);
  }
 
  .team>.team-item {
- 	padding-bottom: 30px;
  	background-color: var(--white);
  	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
  	border-radius: 0px 0px 4px 4px;
@@ -296,7 +309,6 @@
  	display: flex;
 
  	line-height: 1.188;
-
  }
 
  .team-item:not(:last-child) {
@@ -304,7 +316,8 @@
  }
 
  .team-pic {
- 	margin-bottom: var(--gap-margin);
+ 	display: block;
+ 	max-width: 100%;
  }
 
  .team-name {
@@ -369,7 +382,11 @@
  }
 
  .btn-theme {
+ 	padding: 6px 22px;
+ 	border: none;
  	cursor: pointer;
+ 	background-color: var(--second-bg);
+ 	border-radius: 4px;
 
  	font-family: inherit;
  	font-size: 1em;
@@ -439,6 +456,3 @@
  	display: block;
  	max-width: 100%;
  }
-
-
- /* .exampl {} */
